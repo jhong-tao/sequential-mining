@@ -11,19 +11,20 @@
 """
 import time
 
-from pyspark.sql import SparkSession
+from pyspark.sql import SparkSession, DataFrame
 from pyspark.ml.fpm import PrefixSpan
 from pyspark.sql import Row
+from pyspark import SparkContext
 
 if __name__ == '__main__':
-    spark = SparkSession \
+    sparkSession = SparkSession \
         .builder \
         .appName("PrefixSpan") \
         .master("local[1]") \
         .getOrCreate()
-    sc = spark.sparkContext
+    sc: SparkContext = sparkSession.sparkContext
     sc.setLogLevel("ERROR")
-    df = sc.parallelize([Row(sequence=[[1, 2], [3]]),
+    df: DataFrame = sc.parallelize([Row(sequence=[[1, 2], [3]]),
                          Row(sequence=[[1], [3, 2], [1, 2]]),
                          Row(sequence=[[1, 2], [5]]),
                          Row(sequence=[[6]])]).toDF()
@@ -36,4 +37,4 @@ if __name__ == '__main__':
     prefixSpan.findFrequentSequentialPatterns(df).sort("sequence").show(truncate=False)
     print(time.time()-ticks)
 
-    spark.stop()
+    sparkSession.stop()

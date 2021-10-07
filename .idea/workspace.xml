@@ -33,11 +33,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/conda/envs/spark/Lib/site-packages" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+    <property name="last_opened_file_path" value="D:/conda/envs/spark/Lib" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\conda\envs\spark\Lib" />
       <recent name="D:\conda\envs\spark\Lib\site-packages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -73,6 +74,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="PYSPARK_PAHTHON" value="C:\bigdata\spark-3.0.3-bin-hadoop2.7\python" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
@@ -133,6 +135,12 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.compat" />
+      <item itemvalue="Python.prifixSpan" />
+      <item itemvalue="Python.wordcount" />
+      <item itemvalue="Python.wordcount (1)" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.prifixSpan" />
@@ -156,7 +164,10 @@
       <workItem from="1633500067481" duration="12352000" />
       <workItem from="1633570126820" duration="37000" />
       <workItem from="1633570179843" duration="4664000" />
-      <workItem from="1633574910000" duration="78000" />
+      <workItem from="1633574910000" duration="2183000" />
+      <workItem from="1633583623425" duration="78000" />
+      <workItem from="1633584054332" duration="1044000" />
+      <workItem from="1633594110575" duration="2347000" />
     </task>
     <servers />
   </component>
@@ -176,7 +187,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/sequential_mining$prifixSpan.coverage" NAME="prifixSpan Coverage Results" MODIFIED="1633574851235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/sequential_mining$prifixSpan.coverage" NAME="prifixSpan Coverage Results" MODIFIED="1633595805349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/sequential_mining$wordcount__1_.coverage" NAME="wordcount (1) Coverage Results" MODIFIED="1633572501745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/sequential_mining$test.coverage" NAME="test Coverage Results" MODIFIED="1633500350640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/sequential_mining$compat.coverage" NAME="compat Coverage Results" MODIFIED="1633500339135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/conda/envs/spark/Lib/site-packages/py4j" />

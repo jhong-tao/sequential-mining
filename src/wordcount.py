@@ -32,3 +32,4 @@ if __name__ == "__main__":
     resultRdd.repartition(numPartitions=1).saveAsTextFile(path="../data/output/resultWordcount")
 
     sc.stop()
+    
