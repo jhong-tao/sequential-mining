@@ -19,9 +19,10 @@ if __name__ == '__main__':
     spark = SparkSession \
         .builder \
         .appName("PrefixSpan") \
-        .master("local[*]") \
+        .master("local[1]") \
         .getOrCreate()
     sc = spark.sparkContext
+    sc.setLogLevel("ERROR")
     df = sc.parallelize([Row(sequence=[[1, 2], [3]]),
                          Row(sequence=[[1], [3, 2], [1, 2]]),
                          Row(sequence=[[1, 2], [5]]),
@@ -34,3 +35,5 @@ if __name__ == '__main__':
     prefixSpan.setMaxPatternLength(5)
     prefixSpan.findFrequentSequentialPatterns(df).sort("sequence").show(truncate=False)
     print(time.time()-ticks)
+
+    spark.stop()

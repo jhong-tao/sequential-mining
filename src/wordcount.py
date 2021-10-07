@@ -14,17 +14,21 @@ from pyspark import SparkConf, SparkContext
 
 if __name__ == "__main__":
     # 创建SparkConf和SparkContext
-    conf = SparkConf().setMaster("local").setAppName("wordcount")
+    conf = SparkConf().setMaster("local[*]").setAppName("wordcount")
     sc = SparkContext(conf=conf)
+    sc.setLogLevel("ERROR")
 
     # 输入的数据
-    data = ["hello", "world", "hello", "word", "count", "count", "hello"]
+    lines_rdd = sc.textFile("../data/input/wordCount.txt")
 
-    # 将Collection的data转化为spark中的rdd并进行操作
-    rdd = sc.parallelize(data)
-    resultRdd = rdd.map(lambda word: (word, 1)).reduceByKey(lambda a, b: a + b)
+    input_rdd = lines_rdd.flatMap(lambda x: x.split(" "))
 
-    # rdd转为collecton并打印
+    resultRdd = input_rdd.flatMap(lambda x: x.split(" ")).map(lambda x: (x, 1)).reduceByKey(lambda a, b: a+b)
+
     resultColl = resultRdd.collect()
     for line in resultColl:
         print(line)
+
+    resultRdd.repartition(numPartitions=1).saveAsTextFile(path="../data/output/resultWordcount")
+
+    sc.stop()
