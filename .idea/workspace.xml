@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12fdb93b-14ee-4dd0-bf88-aeb6a12cc668" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/sparklearning/DataFrameDemo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/prifixSpan.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/prifixSpan.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wordcount.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/wordcount.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +45,29 @@
       <recent name="E:\git\python\sequential-mining\data\input" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.prifixSpan">
+  <component name="RunManager" selected="Python.DataFrameDemo">
+    <configuration name="DataFrameDemo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sequential-mining" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/sparklearning" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/sparklearning/DataFrameDemo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="compat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="sequential-mining" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -140,9 +162,11 @@
       <item itemvalue="Python.prifixSpan" />
       <item itemvalue="Python.wordcount" />
       <item itemvalue="Python.wordcount (1)" />
+      <item itemvalue="Python.DataFrameDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.DataFrameDemo" />
         <item itemvalue="Python.prifixSpan" />
         <item itemvalue="Python.wordcount (1)" />
         <item itemvalue="Python.wordcount" />
@@ -167,7 +191,7 @@
       <workItem from="1633574910000" duration="2183000" />
       <workItem from="1633583623425" duration="78000" />
       <workItem from="1633584054332" duration="1044000" />
-      <workItem from="1633594110575" duration="2347000" />
+      <workItem from="1633594110575" duration="8389000" />
     </task>
     <servers />
   </component>
@@ -187,8 +211,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/sequential_mining$prifixSpan.coverage" NAME="prifixSpan Coverage Results" MODIFIED="1633595805349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/sequential_mining$prifixSpan.coverage" NAME="prifixSpan Coverage Results" MODIFIED="1633607962803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/sequential_mining$wordcount__1_.coverage" NAME="wordcount (1) Coverage Results" MODIFIED="1633572501745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/sequential_mining$DataFrameDemo.coverage" NAME="DataFrameDemo Coverage Results" MODIFIED="1633609155799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/sparklearning" />
     <SUITE FILE_PATH="coverage/sequential_mining$test.coverage" NAME="test Coverage Results" MODIFIED="1633500350640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/sequential_mining$compat.coverage" NAME="compat Coverage Results" MODIFIED="1633500339135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/conda/envs/spark/Lib/site-packages/py4j" />
   </component>

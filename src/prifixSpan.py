@@ -17,17 +17,18 @@ from pyspark.sql import Row
 from pyspark import SparkContext
 
 if __name__ == '__main__':
-    sparkSession = SparkSession \
+    spark = SparkSession \
         .builder \
         .appName("PrefixSpan") \
-        .master("local[1]") \
+        .master("local[*]") \
         .getOrCreate()
-    sc: SparkContext = sparkSession.sparkContext
+    sc: SparkContext = spark.sparkContext
     sc.setLogLevel("ERROR")
     df: DataFrame = sc.parallelize([Row(sequence=[[1, 2], [3]]),
                          Row(sequence=[[1], [3, 2], [1, 2]]),
                          Row(sequence=[[1, 2], [5]]),
                          Row(sequence=[[6]])]).toDF()
+    df.show()
     ticks = time.time()
     prefixSpan = PrefixSpan()
     prefixSpan.getMaxLocalProjDBSize()
@@ -37,4 +38,4 @@ if __name__ == '__main__':
     prefixSpan.findFrequentSequentialPatterns(df).sort("sequence").show(truncate=False)
     print(time.time()-ticks)
 
-    sparkSession.stop()
+    spark.stop()
