@@ -28,6 +28,7 @@ if __name__ == '__main__':
                          Row(sequence=[[1], [3, 2], [1, 2]]),
                          Row(sequence=[[1, 2], [5]]),
                          Row(sequence=[[6]])]).toDF()
+    df.printSchema()
     df.show()
     ticks = time.time()
     prefixSpan = PrefixSpan()
